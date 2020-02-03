@@ -1,0 +1,101 @@
+.block_price
+{
+	min-height: 600px;
+	padding: 75px 0px;
+	padding-bottom: 50px;
+
+	text-align: center;
+
+	color: white;
+	background-color: #131D22;
+}
+
+.prices
+{
+	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
+	justify-content: center;
+
+	width: 100%;
+}
+
+.price
+{
+	font-family: "Yanone Kaffeesatz";
+
+	min-height: 450px;
+	padding: 0px 35px;
+
+	background-color: #193644;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);;
+}
+
+.one {
+	background-image: url(../img/price/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	backdrop-filter: blur(10px);
+}
+
+.price_center
+{
+	z-index: 4;
+	width: 450px;
+	height: 500px;
+	/* background-color: #2F4E5E; */
+
+	background-image: url(../img/price/2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	backdrop-filter: blur(10px);
+}
+
+.three {
+	background-image: url(../img/price/3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	backdrop-filter: blur(6px);
+}
+
+.name
+{
+	font-size: 40px;
+
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+.price a
+{
+	font-family: "Yanone Kaffeesatz";
+	font-size: 26px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  flex-flow: column;
+	margin-bottom: 25px;
+	padding: 15px 25px;
+  padding-top: 17px;
+	border-radius: 5px;
+  background-color: #007099;
+  border: 3px solid #007099;
+}
+
+.price a:hover
+{
+	border: 3px solid #00BBFF3B;
+	background-color: #193644;
+}
+
+.pr
+{
+	font-size: 40px;
+	font-weight: bold;
+
+	padding-top: 80px;
+	padding-bottom: 70px;
+
+	color: #009BB8;
+}

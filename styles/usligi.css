@@ -1,0 +1,42 @@
+
+.block_uslugi
+{
+	padding-bottom: 50px;
+  padding-top: 71px;
+	text-align: center;
+
+	color: black;
+}
+
+.usluga
+{
+	display: flex;
+	flex-flow: column nowrap;
+
+	width: 300px;
+	margin: 0px 15px;
+}
+
+.usluga img
+{
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+.block_uslugi h2
+{
+	font-size: 40px;
+
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.uslugi
+{
+	align-items: center;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}

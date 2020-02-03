@@ -1,0 +1,84 @@
+.blok_novosti
+{
+	display: flex;
+	flex-direction: column;
+
+	min-height: 600px;
+	padding: 71px 0;
+
+	background-color: white;
+}
+
+.blok_novosti h2
+{
+	font-size: 40px;
+
+	margin-top: 60px;
+	margin-bottom: 40px;
+
+	text-align: center;
+}
+
+
+
+.blok_novosti div.picture
+{
+	display: grid;
+
+	width: 100%;
+	padding: 5px;
+
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.cartinka_novosti, .picture_1, .picture_2
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	width: 655px;
+	height: 400px;
+
+	background-size: cover;
+}
+
+.picture p
+{
+	font-size: 50px;
+	font-weight: bolder;
+
+	color: #1B315D;
+	text-shadow: 2px 2px 0px #FFFFFF;
+}
+
+.picture a
+{
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	width: 100%;
+	padding: 15px;
+
+	border-bottom: 3px solid #192F6400;
+}
+
+.picture a:hover
+{
+	transform: scale(1.1);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	border-bottom: 3px solid #192F64;
+}
+
+.picture_1
+{
+	background-image: url(https://i.pinimg.com/originals/3a/e9/31/3ae931b1ef9077f5f1811289f2cec10d.png);
+}
+.picture_2
+{
+	background-image: url(https://mir-s3-cdn-cf.behance.net/projects/max_808/3afd7c78214451.Y3JvcCw4NjIsNjc1LDE5LDA.jpg);
+}
+
+.picture p.nososv_date
+{
+	font-size: 32px;
+}

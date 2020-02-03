@@ -1,0 +1,63 @@
+@media screen and (max-width: 875px)
+{
+	span.web-studio
+	{
+		font-size: 40px;
+	}
+	span.studio-name
+	{
+		font-size: 80px;
+
+		transition: all 0.3s;
+	}
+	img.next-page-arrow
+	{
+		width: 70px;
+	}
+}
+@media screen and (max-width: 700px)
+{
+	nav
+	{
+		flex-flow: column wrap;
+
+		margin-bottom: 100px;
+	}
+	nav > a
+	{
+		font-size: 30px;
+
+		display: flex;
+		justify-content: center;
+
+		margin-right: unset;
+	}
+}
+@media screen and (max-width: 600px)
+{
+	span.web-studio
+	{
+		font-size: 25px;
+	}
+	span.studio-name
+	{
+		font-size: 40px;
+
+		transition: all 0.3s;
+	}
+	img.studio-logo
+	{
+		width: 40px;
+	}
+	img.next-page-arrow
+	{
+		width: 40px;
+	}
+}
+@media screen and (max-width: 500px)
+{
+	nav > a
+	{
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,46 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* font-family: 'Yanone Kaffeesatz', sans-serif; */
+}
+
+body
+{
+	width: 100%;
+	font-family: "Comfortaa", regular;
+}
+
+a
+{
+	text-decoration: none;
+	color: #FFFFFF;
+	display: block;
+	transition: 0.3s all;
+}
+
+h1
+{
+	text-align: center;
+}
+
+div.container
+{
+	width: 100%;
+    padding: 0 50px;
+	display: flex;
+	align-items: center;
+	flex-flow: column nowrap;
+
+	min-width: 320px;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+div.portfolio-item, div.hover-block, span.portfolio-item-description, div.member, div.portfolio-item:hover, div.portfolio-item:hover div.hover-block, div.portfolio-item:hover span.portfolio-item-description, div.member:hover div.hover-block, div.member:hover
+{
+/* cursor: pointer; */
+	cursor: default;
+	transition: all 0.2s;
+}

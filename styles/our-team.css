@@ -1,0 +1,104 @@
+section.our-team
+{
+	padding-top: 71px;
+	padding-bottom: 75px;
+
+	background-color: #131D22;
+}
+
+section.our-team > .container
+{
+	overflow: hidden;
+}
+
+section.our-team h1.section-title
+{
+	color: #FFFFFF;
+}
+
+div.members
+{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+div.member
+{
+	position: relative;
+
+	width: 100%;
+	min-width: 355px;
+	min-height: 500px;
+	max-height: 500px;
+	margin: 1%;
+
+	background-image: url("../img/our-team/member-avatar 1.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+div.member .hover-block
+{
+	
+	top: 0;
+	right: 0;
+
+	width: 100%;
+	height: 100%;
+	padding: 25px;
+	position: absolute;
+}
+
+span.member-position, span.member-name
+{
+	font-family: "Yanone Kaffeesatz", sans-serif;
+
+	position: absolute;
+
+	width: 100%;
+	left: 0;
+	text-align: center;
+
+	opacity: 0;
+}
+
+span.member-position
+{
+	font-size: 23pt;
+	font-size: 48px;
+	top: 50px;
+}
+
+span.member-name
+{
+	font-size: 40px;
+
+	bottom: 50px;
+}
+
+div.member:hover
+{
+	transition: all 0.2s;
+	transform: scale(1.1);
+
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+div.member:hover div.hover-block
+{
+	background-color: rgba(0, 0, 0, 0.658);
+}
+
+div.member:hover span.member-position
+{
+	opacity: 1;
+}
+
+div.member:hover span.member-name
+{
+	opacity: 1;
+}
