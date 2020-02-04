@@ -15,7 +15,7 @@
             $_SESSION['is_admin'] = 1;
             // echo $_SESSION['is_admin'];
             ?>
-            <meta http-equiv="refresh" content="0;../partOfPage.html">
+            <meta http-equiv="refresh" content="0;../admin.php">
             <?
         }
         else
