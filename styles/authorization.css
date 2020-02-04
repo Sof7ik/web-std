@@ -1,6 +1,6 @@
 body
 {
-	background-color: #F2F2F2;
+	background-color: #131D22;
 }
 
 div.wrapper
@@ -11,12 +11,15 @@ div.wrapper
 	justify-content: center;
 
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
+	padding: 50px 25px;
 }
 
 img.logo
 {
 	width: 15%;
+	min-width: 50px;
+	max-width: 100px;
 	margin-bottom: 25px;
 }
 
@@ -25,16 +28,20 @@ form.auth
 	display: flex;
 	flex-flow: column;
 
-	width: 300px;
-	padding: 40px 20px;
+	min-width: 400px;
+	padding: 60px 70px;
 
 	border: 1px solid grey;
 	background-color: #FFFFFF;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
 
 span
 {
-	font-size: 12px;
+	font-size: 14px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 input.user-login
@@ -44,19 +51,23 @@ input.user-login
 
 input.user-login, input.user-password
 {
-	font-size: 25px;
-
+	font-size: 19px;
+    padding-top: 10px;
 	width: 100%;
-	height: 40px;
-	margin-top: 6px;
-	padding: 6px 0;
-	padding: 0 5px;
-
-	color: #525151;
-	border: 1px solid #525151;
-	border-radius: 5px;
+	min-height: 40px;
+	margin-top: 8px;
+	padding: 7px 20px;
+	background-color: rgba(0,112,153, 0.1);
+	color: rgba(19,29,34, 0.6);
+	border: none;
+	border-radius: 15px;
 }
 
+input.user-login:hover, input.user-password:hover
+{
+	color: rgba(19,29,34, 1);
+	background-color: rgba(0,112,153, 0.3);
+}
 div.login
 {
 	display: flex;
@@ -71,11 +82,48 @@ div.login
 
 input.login-btn
 {
-	padding: 10px;
-
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 10px 25px;
+	padding-top: 13px;
 	color: #FFFFFF;
-	border: none;
-	border-radius: 3px;
-	outline: none;
-	background-color: #007CBA;
+	border: 3px solid #007099;
+	border-radius: 5px;
+	background-color: #007099;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+input.login-btn:hover
+{
+	color: #007099;
+	border: 3px solid #007099;
+	background-color: #ffffff;
+}
+
+a.logout-btn
+{
+	opacity: 0.6;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-top: 50px;
+}
+
+a.logout-btn:hover
+{
+	opacity: 1;
+}
+
+@media screen and (max-width: 600px)
+{
+	div.container, div.wrapper
+	{
+		padding: 50px 0px;
+	}
+	form.auth
+	{
+		min-width: auto;
+		width: 100%;
+		padding: 50px 10%;
+	}
 }
