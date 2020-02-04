@@ -60,7 +60,7 @@
 
     $format = str_replace('jpeg', 'jpg', $extension);
 
-    $folderForPostImage = __DIR__ . './../images/' . $lastIdNews;
+    $folderForPostImage = __DIR__ . './../news_images/' . $lastIdNews;
 
     mkdir($folderForPostImage);
 
