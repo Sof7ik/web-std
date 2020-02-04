@@ -55,8 +55,7 @@ nav > a
 	font-family: "Comfortaa", regular;
 	font-size: 18px;
 
-	margin-right: 55px;
-
+	margin: 0px 25px;
 	transition: all 0.3s;
 	text-transform: uppercase;
 
