@@ -36,6 +36,9 @@
             $_SESSION['is_admin'] = 1;
             echo $_SESSION['is_admin'];
             echo "Хорошо, охуенно, заебись!";
+            ?>
+            <meta http-equiv="refresh" content="0;../partOfPage.html">
+            <?
         }
         else
         {
