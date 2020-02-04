@@ -41,6 +41,7 @@
 .price_center
 {
 	z-index: 4;
+
 	width: 450px;
 	height: 500px;
 	/* background-color: #2F4E5E; */
@@ -73,14 +74,16 @@
 
 	display: flex;
 	align-items: center;
+	flex-flow: column;
 	justify-content: center;
-  flex-flow: column;
+
 	margin-bottom: 25px;
 	padding: 15px 25px;
-  padding-top: 17px;
+	padding-top: 17px;
+
+	border: 3px solid #007099;
 	border-radius: 5px;
-  background-color: #007099;
-  border: 3px solid #007099;
+	background-color: #007099;
 }
 
 .price a:hover

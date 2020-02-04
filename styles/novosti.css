@@ -49,24 +49,30 @@
 	font-size: 50px;
 	font-weight: bolder;
 
+	word-break: break-word;
+
 	color: #1B315D;
 	text-shadow: 2px 2px 0px #FFFFFF;
 }
 
 .picture a
 {
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	font-size: 12vw;
+
 	width: 100%;
 	padding: 15px;
 
 	border-bottom: 3px solid #192F6400;
+	background-position: top center;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .picture a:hover
 {
 	transform: scale(1.1);
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 	border-bottom: 3px solid #192F64;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .picture_1

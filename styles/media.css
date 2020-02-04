@@ -54,11 +54,12 @@
 	nav > a
 	{
 		font-size: 19px;
-		margin: 10px 0;
-		width: 100%;
+
 		display: flex;
 		justify-content: center;
 
+		width: 100%;
+		margin: 10px 0;
 		margin-right: unset;
 	}
 	.blok_novosti div.picture, div.portfolio-wrapper
@@ -68,7 +69,7 @@
 	div.container
 	{
 		padding: 0 25px;
-	}	
+	}
 }
 
 @media screen and (max-width: 600px)
@@ -102,5 +103,13 @@
 	div.container
 	{
 		padding: 0 15px;
+	}
+	.picture p
+	{
+		font-size: 10vw;
+	}
+	h1.section-title
+	{
+		font-size: 12vw;
 	}
 }

@@ -43,14 +43,13 @@ div.member
 
 div.member .hover-block
 {
-	
+	position: absolute;
 	top: 0;
 	right: 0;
 
 	width: 100%;
 	height: 100%;
 	padding: 25px;
-	position: absolute;
 }
 
 span.member-position, span.member-name
@@ -58,9 +57,10 @@ span.member-position, span.member-name
 	font-family: "Yanone Kaffeesatz", sans-serif;
 
 	position: absolute;
+	left: 0;
 
 	width: 100%;
-	left: 0;
+
 	text-align: center;
 
 	opacity: 0;
@@ -70,6 +70,7 @@ span.member-position
 {
 	font-size: 23pt;
 	font-size: 48px;
+
 	top: 50px;
 }
 

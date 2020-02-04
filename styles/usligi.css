@@ -1,8 +1,9 @@
 
 .block_uslugi
 {
+	padding-top: 71px;
 	padding-bottom: 50px;
-  padding-top: 71px;
+
 	text-align: center;
 
 	color: black;
@@ -34,9 +35,10 @@
 
 .uslugi
 {
-	align-items: center;
-	width: 100%;
 	display: flex;
+	align-items: center;
 	flex-flow: row wrap;
 	justify-content: center;
+
+	width: 100%;
 }

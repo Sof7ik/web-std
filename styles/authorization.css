@@ -1,64 +1,81 @@
-body {
-    background-color: #f2f2f2;
+body
+{
+	background-color: #F2F2F2;
 }
 
-div.wrapper {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+div.wrapper
+{
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+	justify-content: center;
+
+	width: 100%;
+	height: 100vh;
 }
 
-img.logo {
-    margin-bottom: 25px;
-    width: 15%;
+img.logo
+{
+	width: 15%;
+	margin-bottom: 25px;
 }
 
-form.auth {
-    display: flex;
-    flex-flow: column;
-    background-color: #fff;
-    padding: 40px 20px;
-    border: 1px solid grey;
-    width: 300px;
+form.auth
+{
+	display: flex;
+	flex-flow: column;
+
+	width: 300px;
+	padding: 40px 20px;
+
+	border: 1px solid grey;
+	background-color: #FFFFFF;
 }
 
-span {
-    font-size: 12px;
+span
+{
+	font-size: 12px;
 }
 
-input.user-login {
-    margin-bottom: 20px;
+input.user-login
+{
+	margin-bottom: 20px;
 }
 
-input.user-login, input.user-password {
-    height: 40px;
-    width: 100%;
-    margin-top: 6px;
-    font-size: 25px;
-    padding: 6px 0;
-    color: #525151;
-    border-radius: 5px;
-    border: 1px solid #525151;
-    padding: 0 5px;
+input.user-login, input.user-password
+{
+	font-size: 25px;
+
+	width: 100%;
+	height: 40px;
+	margin-top: 6px;
+	padding: 6px 0;
+	padding: 0 5px;
+
+	color: #525151;
+	border: 1px solid #525151;
+	border-radius: 5px;
 }
 
-div.login {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    justify-content: flex-end;
-    align-items: center;
+div.login
+{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+
+/* justify-content: space-between; */
+	justify-content: flex-end;
+
+	margin-top: 20px;
 }
 
-input.login-btn {
-    background-color: #007cba;
-    outline: none;
-    border: none;
-    padding: 10px;
-    color: #fff;
-    border-radius: 3px;
+input.login-btn
+{
+	padding: 10px;
+
+	color: #FFFFFF;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	background-color: #007CBA;
 }
