@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 03 2020 г., 14:14
--- Версия сервера: 10.3.13-MariaDB
--- Версия PHP: 7.1.22
+-- Время создания: Фев 04 2020 г., 19:24
+-- Версия сервера: 8.0.15
+-- Версия PHP: 7.3.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -60,27 +60,9 @@ CREATE TABLE `news` (
   `title_news` varchar(30) NOT NULL,
   `text_news` text NOT NULL,
   `date_news` datetime NOT NULL,
-  `status_news` varchar(20) NOT NULL
+  `status_news` varchar(20) NOT NULL,
+  `photo_news` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `news`
---
-
-INSERT INTO `news` (`id_news`, `title_news`, `text_news`, `date_news`, `status_news`) VALUES
-(1, 'afwfaw', 'asfasfasf', '2020-02-03 11:34:00', 'active'),
-(2, 'afwfaw', 'asfasfasf', '2020-02-03 11:34:00', 'active');
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `photos_news`
---
-
-CREATE TABLE `photos_news` (
-  `id_news` int(11) NOT NULL,
-  `link_photo` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 --
 -- Индексы сохранённых таблиц
@@ -99,12 +81,6 @@ ALTER TABLE `news`
   ADD PRIMARY KEY (`id_news`);
 
 --
--- Индексы таблицы `photos_news`
---
-ALTER TABLE `photos_news`
-  ADD KEY `id_news` (`id_news`);
-
---
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
@@ -118,17 +94,7 @@ ALTER TABLE `feedback`
 -- AUTO_INCREMENT для таблицы `news`
 --
 ALTER TABLE `news`
-  MODIFY `id_news` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- Ограничения внешнего ключа сохраненных таблиц
---
-
---
--- Ограничения внешнего ключа таблицы `photos_news`
---
-ALTER TABLE `photos_news`
-  ADD CONSTRAINT `photos_news_ibfk_1` FOREIGN KEY (`id_news`) REFERENCES `news` (`id_news`) ON DELETE CASCADE ON UPDATE CASCADE;
+  MODIFY `id_news` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
