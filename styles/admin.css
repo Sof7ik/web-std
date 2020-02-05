@@ -1,3 +1,25 @@
+.wrapper
+{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 20px;
+}
+
+.left-container, .right-container {
+	flex-basis: 50%;
+}
+
+.edit-studio-title {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
 form.new-news-wrapper
 {
 	width: 900px;
@@ -73,4 +95,5 @@ textarea.input-main-text
 
 	border: 1px solid #000000;
 	outline: none;
+	resize: vertical;
 }
