@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+var swiperOne = new Swiper('.swiper-container-our', {
     slidesPerView: 3,
     spaceBetween: 30,
     freeMode: true,
@@ -8,5 +8,12 @@ var swiper = new Swiper('.swiper-container', {
     },
   });
 
+
+  var swiperTwo = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
   var scroll = new SmoothScroll('a[href*="#"]');
