@@ -10,12 +10,12 @@
 
     $dateNews = date('Y-m-d H:i');
 
-    if ($_FILES["image"]['error'] == UPLOAD_ERR_NO_FILE)
+    if ($_FILES['image_news']['error'] == UPLOAD_ERR_NO_FILE)
     {
         die("Произошла ошибка при отправке изображения");
     }
 
-    $uploadedImage = $_FILES["image"];
+    $uploadedImage = $_FILES['image_news'];
 
     $imagePath = $uploadedImage['tmp_name'];
     $errorCode = $uploadedImage['error'];
@@ -26,6 +26,9 @@
     }
 
     $fi = finfo_open(FILEINFO_MIME_TYPE);
+    echo '<pre>';
+        print_r($_FILES);
+    echo '</pre>';
     $mime = (string) finfo_file($fi, $imagePath);
 
     if (strpos($mime, 'image') === false)
@@ -65,12 +68,14 @@
 
     mkdir($folderForPostImage);
 
-    $imageFullPath = $folderForPostImage . '/' . $name . $format;
+    $imageNameFormat = $name . $format;
+
+    $imageFullPath = $folderForPostImage . '/' . $imageNameFormat;
 
     if (!move_uploaded_file($imagePath, $imageFullPath))
     {
         die("При записи изображения на диск произошла ошибка");
     }
-
-    Database::queryExecute("INSERT INTO news VALUES ('$lastIdNews', '$titleNews', '$textNews', '$dateNews', 'active', '$imageFullPath')");
+    
+    Database::queryExecute("INSERT INTO news VALUES ('$lastIdNews', '$titleNews', '$textNews', '$dateNews', 'active', '$imageNameFormat')");
 ?>
