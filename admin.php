@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!$_SESSION['is_admin']){
+    header('Location: ./authorization.html');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -13,7 +20,10 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="left-container">
+<!-- СТИЛИЗУЙТЕ -->
+    <a href="php/logout.php" class="logout-btn" style="color:black;">Выйти</a> 
+
+    <div class="left-container">
             <form action="" method="POST" class="edit-studio-title">
                 <h1 class="edit-studio-title">ИЗМЕНИТЬ НАЗВАНИЕ СТУДИИ</h1>
 
@@ -83,6 +93,7 @@
                     <p class="publish-date">Дата публикации</p>
                 </div>
                 <div class="all-wrapper">
+                
                     <?php 
                         require_once ('php/archive.php');
                     ?>
@@ -91,5 +102,6 @@
             </div>
         </div>
     </div>
+    
 </body>
 </html>
