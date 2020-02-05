@@ -52,6 +52,17 @@
 		margin-top: 15px;
 	}
 }
+@media screen and (min-width: 875px)
+{
+	nav
+	{
+		display: flex !important;
+	}
+	.closeNavMobile
+	{
+		display: none !important;
+	}
+}
 
 @media screen and (max-width: 875px)
 {
@@ -61,17 +72,19 @@
 	}
 	nav
 	{
-		height: 100%;
 		display: none
 	}
 	nav
 	{
+		overflow: hidden;
+		overflow-y: scroll;
 		background-color: rgba(19, 29, 34, 0.9);
-		height: 100%;
 		width: 100%;
-		flex-flow: column wrap;
-		justify-content: space-evenly;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
 		align-items: center;
+		position: absolute;
+		height: 100%;
 	}
 	nav > a
 	{

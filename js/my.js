@@ -50,6 +50,7 @@ burger.addEventListener('click', () =>
 
 closeNavMobile.addEventListener('click', () =>
 {
+  document.body.style.overflow = 'scroll';
   nav.style.display = 'none';
   navMobile.style.display = 'flex';
   closeNavMobile.style.display = 'none';
@@ -64,30 +65,5 @@ document.addEventListener('scroll', () =>
   else
   {
     arrowDown.style.visibility = 'hidden';
-  }
-});
-
-window.addEventListener('resize', () =>
-{
-  if (window.innerWidth >= 875)
-  {
-    closeNavMobile.style.display = 'none';
-  }
-  else
-  {
-    if (nav.style.display == 'flex')
-    {
-      nav.style.display = 'none';
-      navMobile.style.display = 'flex';
-      closeNavMobile.style.display = 'none';
-      document.body.style.overflow = 'scroll';
-    }
-    else
-    {
-      document.body.style.overflow = 'hidden';
-      closeNavMobile.style.display = 'flex';
-      nav.style.display = 'flex';
-      navMobile.style.display = 'none';
-    }
   }
 });
