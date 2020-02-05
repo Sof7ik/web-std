@@ -11,6 +11,11 @@ section.our-team > .container
 	overflow: hidden;
 }
 
+section.our-team .members .swiper-slide
+{
+	max-width: 600px;
+}
+
 section.our-team h1.section-title
 {
 	color: #FFFFFF;

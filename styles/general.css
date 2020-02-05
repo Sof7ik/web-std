@@ -59,7 +59,7 @@ div.container
 	width: 100%;
 	min-width: 320px;
 	max-width: 1440px;
-	min-height: 70vh;
+	/* min-height: 70vh; */
 	margin: 0 auto;
 	padding: 0 50px;
 }
