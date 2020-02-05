@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel='stylesheet' href='styles/media.css'>
 
+    <script src="./js/send_feedback.js" defer></script>
+
     <title>partOfPage</title>
 </head>
 
@@ -141,13 +143,13 @@
     <section id="contact">
         <div class="container">
             <h1 class="section-title" style="padding-top: 90px">ФОРМА СВЯЗИ</h1>
-            <form action="#" class="forma">
+            <form action="#" class="forma" id="feedback_form">
                 <div class="box-form">
                     <div class="form-submit">
-                        <input class="fio" type="text" placeholder="Введите ФИО..." required>
-                        <input class="fio" type="text" placeholder="Введите E-mail..." required>
+                        <input class="fio" id="fio_feedback" type="text" placeholder="Введите ФИО..." required>
+                        <input class="fio" id="email_feedback" type="text" placeholder="Введите E-mail..." required>
                     </div>
-                    <textarea placeholder="Введите текст..." class="text-enter"></textarea>
+                    <textarea id="text_feedback" placeholder="Введите текст..." class="text-enter"></textarea>
                 </div>
                     <input type="submit" value="ОТПРАВИТЬ" class="submit">
             </form>

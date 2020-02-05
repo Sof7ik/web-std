@@ -7,5 +7,14 @@
     $emailFeedback = $_REQUEST['email_feedback'];
     $dateFeedback = date('Y-m-d H:i');
     
-    Database::queryExecute("INSERT INTO feedback VALUES (NULL, '$dateFeedback', '$fioFeedback', '$phoneFeedback', '$emailFeedback', '$descriptionFeedback', 'active')");
+    $response = Database::queryExecute("INSERT INTO feedback VALUES (NULL, '$dateFeedback', '$fioFeedback', NULL, '$emailFeedback', '$descriptionFeedback', 'active')");
+
+    if ($response)
+    {
+        echo '<p class="feedback_response">Ваш запрос принят</p>';
+    }
+    else
+    {
+        echo '<p class="feedback_response">Что-то пошло не так, попробуйте ещё раз</p>';
+    }
 ?>
