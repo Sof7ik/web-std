@@ -26,7 +26,7 @@
             <form action="./php/adding_news.php" method="POST" class="new-news-wrapper" enctype="multipart/form-data">
                 <h1>ДОБАВИТЬ НОВОСТЬ</h1>
 
-                <img src="img/icons/admin/close-news.png" alt="close-news" class="close-news">
+                <!-- <img src="img/icons/admin/close-news.png" alt="close-news" class="close-news"> -->
 
                 <h1 class="new-news-title">Заголовок</h1>
                 <input type="text" class="input-title" placeholder="Введите заголовок..." name="title_news" required>
@@ -49,23 +49,33 @@
 
             <!-- <form action="" method="GET" class="change-color-theme"> -->
             <div class="change-color-theme">
-                <input type="radio" id="theme-1" name="color-theme">
-                <label for="theme-1">
-                    <img src="../img/styles/theme-1">
-                </label>
 
-                <input type="radio" id="theme-2" name="color-theme">
-                <label for="theme-2">
-                    <img src="../img/styles/theme-2">
-                </label>
+                <h1>ВЫБЕРИТЕ СТИЛЬ САЙТА</h1>
+                <div class="set-color-theme">
 
-                <input type="radio" id="theme-3" name="color-theme">
-                <label for="theme-3">
-                    <img src="../img/styles/theme-3">
-                </label>
+                    <input type="radio" id="theme-1" name="color-theme" required>
+                    <label for="theme-1" class="color-theme-image">
+                        <img src="../img/price/1.jpg" class="color-theme-image">
+                    </label>
 
+                    <input type="radio" id="theme-2" name="color-theme" required>
+                    <label for="theme-2" class="color-theme-image">
+                        <img src="../img/price/1.jpg" class="color-theme-image">
+                    </label>
+
+                    <input type="radio" id="theme-3" name="color-theme" required>
+                    <label for="theme-3" class="color-theme-image">
+                        <img src="../img/price/1.jpg" class="color-theme-image">
+                    </label>
+
+                </div>
+                <button class="set-color-theme-btn">Применить</button>
             </div>
             <!-- </form> -->
+
+            <div class="news-archieve">
+                
+            </div>
         </div>
     </div>
     
