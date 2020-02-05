@@ -78,6 +78,15 @@
 	{
 		padding: 0 25px;
 	}
+	.comment
+	{
+		margin: 25px;
+	}
+	.swiper-button-next,
+	.swiper-button-prev
+	{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 600px)
