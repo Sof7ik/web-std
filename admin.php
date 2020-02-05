@@ -1,10 +1,3 @@
-<?php
-session_start();
-if (!$_SESSION['is_admin']){
-    header('Location: ./authorization.html');
-}
-
-?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -20,10 +13,22 @@ if (!$_SESSION['is_admin']){
 </head>
 <body>
     <div class="wrapper">
-<!-- СТИЛИЗУЙТЕ -->
-    <a href="php/logout.php" class="logout-btn" style="color:black;">Выйти</a> 
+        
+            <div class="feedback">
+                <div class="feedback-header">
+                    <p class="name-request">ФИО</p>
+                    <p class="email-request">Эл. почта</p>
+                    <p class="phone-number-request">Номер телефона</p>
+                    <p class="date-request">Дата запроса</p>
+                </div>
+                <div class="all-requests">
+                    <?php 
+                        //require_once ('php/feedback.php');
+                    ?>
+                </div>
+            </div>
 
-    <div class="left-container">
+        <div class="left-container">
             <form action="" method="POST" class="edit-studio-title">
                 <h1 class="edit-studio-title">ИЗМЕНИТЬ НАЗВАНИЕ СТУДИИ</h1>
 
@@ -86,14 +91,13 @@ if (!$_SESSION['is_admin']){
             </div>
             <!-- </form> -->
 
-            <div action="php/delete_news_from_archive" method="GET" class="news-archive">
+            <div class="news-archive">
                 <div class="arcive-header">
                     <p class="news-title">Заголовок</p>
-                    <p class="pre-text">Пре-текст</pclass="news-title">
+                    <p class="pre-text">Пре-текст</p>
                     <p class="publish-date">Дата публикации</p>
                 </div>
                 <div class="all-wrapper">
-                
                     <?php 
                         require_once ('php/archive.php');
                     ?>
@@ -102,6 +106,5 @@ if (!$_SESSION['is_admin']){
             </div>
         </div>
     </div>
-    
 </body>
 </html>
