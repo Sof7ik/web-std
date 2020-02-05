@@ -5,6 +5,13 @@
     color: #FFFFFF;
 }
 
+.comments .swiper-slide
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .comments > .container
 {
     overflow: hidden;
@@ -12,6 +19,7 @@
 
 .comment
 {
+    max-width: 1440px;
     margin: 0px 125px;
     padding: 50px;
     border: 3px solid #FFFFFF;
