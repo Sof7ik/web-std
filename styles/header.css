@@ -28,7 +28,30 @@ header .container .header-info
 
 	margin-top: auto;
 }
-nav
+
+.hide-unhide, .nav-title
+{
+	display: none;
+
+	margin: 0 10px;
+
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.nav-title
+{
+	padding-top: 3px;
+}
+
+.hide-unhide
+{
+	cursor: pointer;
+	transform: rotate(90deg);
+}
+
+nav, .navMobile
 {
 	position: fixed;
 	z-index: 100;
@@ -48,6 +71,36 @@ nav
 	background-color: rgba(19, 29, 34, 0.5);
 
 	backdrop-filter: opacity(53%);
+}
+
+.closeNavMobile
+{
+	z-index: 100;
+	font-size: 56px;
+	width: 100%;
+
+	display: none;
+	align-items: center;
+	justify-content: center;
+	margin: 15px 0;
+	height: 50px;
+
+	cursor: pointer;
+	transition: 1s all;
+
+	color: #FFFFFF;
+}
+
+.closeNavMobile:hover
+{
+	transform: rotate(90deg);
+}
+
+.navMobile
+{
+	display: none;
+	flex-flow: row nowrap;
+	justify-content: space-around;
 }
 
 nav > a
