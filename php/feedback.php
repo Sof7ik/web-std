@@ -7,12 +7,12 @@
 	foreach ($query as $row){
 		echo"
 			<div class='inner-news-archive'>
-				<p class='news-title'>" . $row['fio_feedback'] . "</p>
-				<p class='pre-text'>" . $row['description_feedback'] . "</p>
-				<p class='publish-date'>" . $row['date_feedback'] . "</p>
-				<p class='publish-date'>" . $row['phone_feedback'] . "</p>
-				<p class='publish-date'>" . $row['email_feedback'] . "</p>
-				<p class='publish-date'>" . $row['status_feedback'] . "</p>
+				<p class='name-request'>" . $row['fio_feedback'] . "</p>
+				<p class='pre-request'>" . $row['description_feedback'] . "</p>
+				<p class='date-request'>" . $row['date_feedback'] . "</p>
+				<p class='phone-number-request'>" . $row['phone_feedback'] . "</p>
+				<p class='email-request'>" . $row['email_feedback'] . "</p>
+				<p class='status-request'>" . $row['status_feedback'] . "</p>	
 				<a href='delete_feedback.php?id_feedback=".$row['id_feedback']."'>
 					<img src='../img/icons/admin/trash.png' class='delete-news'>
 				</a>

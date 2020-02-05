@@ -26,9 +26,12 @@ if (!$_SESSION['is_admin']){
             <div class="feedback">
                 <div class="feedback-header">
                     <p class="name-request">ФИО</p>
-                    <p class="email-request">Эл. почта</p>
-                    <p class="phone-number-request">Номер телефона</p>
+                    <p class="pre-request">Описание запроса</p>
                     <p class="date-request">Дата запроса</p>
+                    <p class="phone-number-request">Номер телефона</p>
+                    <p class="email-request">Эл. почта</p>
+                    <p class="status-request">Статус запроса</p>
+                    <p class="empty-request"></p>
                 </div>
                 <div class="all-requests">
                     <?php 
