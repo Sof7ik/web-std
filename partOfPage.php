@@ -31,7 +31,7 @@
 
             <nav>
                 <div class="closeNavMobile">×</div>
-                
+
                 <a href="#uslugi">Услуги</a>
                 <a href="#price">Цены</a>
                 <a href="#portfolio">Портфолио</a>
@@ -77,6 +77,21 @@
                     <p>ПОДДЕРЖКА САЙТОВ</p>
                 </div>
             </div>
+
+            <div class="uslugi" style="padding-top: 65px;">
+                <div class="usluga">
+                    <img src="./img/icons/optimization.png">
+                    <p>ОПТИМИЗАЦИЯ САЙТОВ</p>
+                </div>
+                <div class="usluga">
+                    <img src="./img/icons/organization.png">
+                    <p>ПРОЕКТИРОВАНИЕ СТРУКТУРЫ</p>
+                </div>
+                <div class="usluga">
+                    <img src="./img/icons/content.png">
+                    <p>АНАЛИЗ ИНФОРМАЦИИ</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -88,19 +103,19 @@
                 <div class="price one">
                     <p class="name"> Лендинг страница</p>
                     <p class="pr"> 20 000 р </p>
-                    <a href=""> Заказать </a>
+                    <a href="#contact"> Заказать </a>
                 </div>
 
                 <div class="price price_center">
                     <p class="name"> Сайт-магазин </p>
                     <p class="pr"> 80 000 р </p>
-                    <a href=""> Заказать </a>
+                    <a href="#contact"> Заказать </a>
                 </div>
 
                 <div class="price three">
                     <p class="name"> Корпоративный сайт </p>
                     <p class="pr"> 50 000 р </p>
-                    <a href=""> Заказать </a>
+                    <a href="#contact"> Заказать </a>
                 </div>
 
             </div>
@@ -218,11 +233,10 @@
         <div class="container">
             <h1 class="section-title">НОВОСТИ</h1>
             <div class="picture">
-             <?php 
-             require_once './php/all_news.php';
-             ?>  
-            
-            <!-- <a href="" class="picture_1">
+            <?php 
+                require_once './php/all_news.php';
+            ?>  
+                <!-- <a href="" class="picture_1">
                     <p>НОВОСТЬ</p>
                     <p class="nososv_date">03.02.2020</p>
                 </a>
