@@ -1,0 +1,41 @@
+.comments
+{
+    padding: 97px 0px;
+    background-color: #131D22;
+    color: #FFFFFF;
+}
+
+.comments > .container
+{
+    overflow: hidden;
+}
+
+.comment
+{
+    margin: 0px 125px;
+    padding: 50px;
+    border: 3px solid #FFFFFF;
+}
+
+.comment > .text
+{
+    margin: 35px 0;
+}
+
+.comment > .author, .comment > .who
+{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.comment > .who
+{
+    text-align: right;
+}
+
+.swiper-button-next,
+.swiper-button-prev
+{
+    color: #FFFFFF;
+    margin: 0px 25px;
+}
