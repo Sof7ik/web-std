@@ -104,12 +104,14 @@ section#contact .section-title
 	border-radius: 35px;
 	outline: none;
 	background-color: #B94643;
+	transform: scale(1);
 }
 
 .submit:hover
 {
 	color: #B94643;
 	background-color: white;
+	transform: scale(1.05);
 }
 
 .left-box

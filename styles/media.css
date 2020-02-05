@@ -35,6 +35,10 @@
 	{
 		flex-flow: column nowrap;
 	}
+	.box-form input, .box-form textarea
+	{
+		text-align: center;
+	}
 	.text-enter
 	{
 		width: 100%;
