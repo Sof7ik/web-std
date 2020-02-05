@@ -27,11 +27,6 @@ let titleNewsInput = document.querySelector('.new-news-wrapper input[name="title
 let textNewsInput = document.querySelector('.input-main-text');
 let fileNewsInput = document.querySelector('.new-news-wrapper input[name="image_news"]');
 
-console.log(sendNewsButton);
-console.log(titleNewsInput);
-console.log(textNewsInput);
-console.log(fileNewsInput);
-
 sendNewsButton.addEventListener('click', (event) =>
 {
     sendNews(event);
