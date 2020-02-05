@@ -52,7 +52,6 @@ h1
 
 div.container
 {
-	min-height: 70vh;
 	display: flex;
 	align-items: center;
 	flex-flow: column nowrap;
@@ -60,6 +59,7 @@ div.container
 	width: 100%;
 	min-width: 320px;
 	max-width: 1440px;
+	min-height: 70vh;
 	margin: 0 auto;
 	padding: 0 50px;
 }
@@ -69,4 +69,9 @@ div.portfolio-item, div.hover-block, span.portfolio-item-description, div.member
 	/* cursor: pointer; */
 	cursor: default;
 	transition: all 0.2s;
+}
+
+h1.section-title
+{
+	text-transform: uppercase;
 }

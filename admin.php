@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/admin.css">
-    <title>Document</title>
+
+    <script src="./js/send_news.js" defer></script>
+    
+    <title>Админ-панель</title>
 </head>
 <body>
     <div class="wrapper">
@@ -38,7 +41,7 @@
                     <input type="file" name="image_news" accept=".png, .jpg, .jpeg">
                 </div>
 
-                <textarea class="input-main-text" placeholder="Введите текст..."  name="text_news" required></textarea>
+                <textarea class="input-main-text" placeholder="Введите текст..." name="text_news" required></textarea>
 
                 <input type="submit">
             </form>
@@ -88,7 +91,5 @@
             </div>
         </div>
     </div>
-    
-    
 </body>
 </html>

@@ -8,163 +8,203 @@ body {
     font-family: "Comfortaa", regular;
 } */
 
-section#contact {
-    background-color: #131d22;
-    display: flex;
-    flex-flow: column wrap;
+section#contact
+{
+	display: flex;
+	flex-flow: column wrap;
+
+	background-color: #131D22;
 }
 
-section#contact div.container {
-    width: 90%;
+section#contact div.container
+{
+	width: 90%;
 }
 
-section#contact .section-title{
-    color: white;
+section#contact .section-title
+{
+	color: white;
 }
 
-.box-form {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding-top: 15px;
+.box-form
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	padding-top: 15px;
 }
 
-.form-submit {
+.form-submit
+{
+	display: flex;
+	flex-flow: column wrap;
 	flex-grow: 1;
-    display: flex;
-    flex-flow: column wrap;
-    margin-right: 15px;
 
+	margin-right: 15px;
 }
 
-.fio {
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    font-size: 1vh;
-    font-size: 1vw;
-    padding: 15px;
-    cursor: text;
+.fio
+{
+	font-size: 16px;
+
 	height: 55px;
+	padding: 15px 25px;
+
+	cursor: text;
+
+	border: none;
+	border-radius: 20px;
+	outline: none;
 }
 
-.form-submit :first-child{
-    margin-bottom: 10px;
+.form-submit :first-child
+{
+	margin-bottom: 10px;
 }
 
-.text-enter {
-	resize: vertical;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    width: 250px;
-    font-size: 1vh;
-    font-size: 1vw;
-    cursor: text;
-    font-family: "Comfortaa", regular;
-    padding: 10px;
+.text-enter
+{
+	font-family: "Comfortaa", regular;
+	font-size: 16px;
+
 	flex-grow: 2;
+
+	width: 250px;
+	min-height: 100px;
+	max-height: 300px;
+	padding: 15px 30px;
+
+	resize: vertical;
+	cursor: text;
+
+	border: none;
+	border-radius: 20px;
+	outline: none;
 }
 
-.submit {
-    display: block;
-    margin: 40px auto;
-    padding: 8px;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    border-radius: 35px;
-    border:none;
-    background-color: #B94643;
-    color: white;
-    font: 23px bold;
-    width: 300px;
-    outline: none;
+.submit
+{
+	font: 23px bold;
+	font-family: "Comfortaa", regular;
+
+	display: block;
+
+	width: 300px;
 	height: 60px;
-    font-family: "Comfortaa", regular;
-    cursor: pointer;
+	margin: 40px auto;
+	margin-top: 90px;
+	margin-bottom: 90px;
+	padding: 8px;
+
+	cursor: pointer;
+
+	color: white;
+	border: none;
+	border-radius: 35px;
+	outline: none;
+	background-color: #B94643;
+	transform: scale(1);
 }
 
 .submit:hover
 {
-    color: #B94643;
-    background-color: white;
+	color: #B94643;
+	background-color: white;
+	transform: scale(1.05);
 }
 
-.left-box {
-    color: #000000;;
-    padding: 7px;
+.left-box
+{
+	padding: 7px;
+
+	color: #000000;;
 }
 
-.box-maps {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    width: 100%;
-    padding-bottom:80px;     
+.box-maps
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+	width: 100%;
+	padding-bottom: 80px;
 }
 
-.lef-bar {
-    display: flex;
-    flex-flow: column;
+.lef-bar
+{
+	display: flex;
+	flex-flow: column;
 }
 
-.arrow-up {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    background-image: url("../img/icons/arrow_down1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 30px;
-    height: 30px;
-    transform: rotate(180deg);
-    opacity: 0.3;
+.arrow-up
+{
+	visibility: hidden;
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+
+	width: 30px;
+	height: 30px;
+
+	transform: rotate(180deg);
+
+	opacity: 0.3;
+	background-image: url("../img/icons/arrow_down1.png");
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .arrow-up:hover
 {
-    opacity: 1;
+	opacity: 1;
 }
 
-.arrowDiv {
-    position: relative;
+.arrowDiv
+{
+	position: relative;
 }
 
-.license {
-    text-align: center;
-    color:#FFFFFF;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    width: 100%;
-    background-color: #131d22;
+.license
+{
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	text-align: center;
+
+	color: #FFFFFF;
+	background-color: #131D22;
 }
 
-.forma {
+.forma
+{
 	width: 100%;
 }
 
 .map
 {
-    padding-top: 90px;
-    
+	padding-top: 90px;
 }
 
 #map-inner
 {
-    flex-grow: 2;
-    margin-right: 25px;
-    margin-bottom: 25px;
+	flex-grow: 2;
+
+	margin-right: 25px;
+	margin-bottom: 25px;
 }
 
 .lef-bar
 {
-    flex-grow: 1;
+	flex-grow: 1;
 }
 
 #map-inner iframe
 {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    outline: 0;
-    border: 0;
-    width: 100%;
+	width: 100%;
+
+	border: 0;
+	outline: 0;
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
