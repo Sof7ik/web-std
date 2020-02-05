@@ -137,6 +137,7 @@ section#contact .section-title
 
 .arrow-up
 {
+	visibility: hidden;
 	position: fixed;
 	right: 40px;
 	bottom: 40px;
