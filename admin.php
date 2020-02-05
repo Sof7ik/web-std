@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!$_SESSION['is_admin']){
+    header('Location: ./authorization.html');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,6 +19,8 @@
     <title>Админ-панель</title>
 </head>
 <body>
+
+    <a href="partOfPage.php" style="color: #000000;">НА ГЛАВНУЮ</a>
     <div class="wrapper">
         
             <div class="feedback">
@@ -23,7 +32,7 @@
                 </div>
                 <div class="all-requests">
                     <?php 
-                        //require_once ('php/feedback.php');
+                        require_once ('php/feedback.php');
                     ?>
                 </div>
             </div>
@@ -41,28 +50,6 @@
                 <input type="submit" value="Поменять!">
             </form>
 
-            <form action="./php/adding_news.php" method="POST" class="new-news-wrapper" enctype="multipart/form-data">
-                <h1>ДОБАВИТЬ НОВОСТЬ</h1>
-
-                <!-- <img src="img/icons/admin/close-news.png" alt="close-news" class="close-news"> -->
-
-                <h1 class="new-news-title">Заголовок</h1>
-                <input type="text" class="input-title" placeholder="Введите заголовок..." name="title_news" required>
-
-                <h1 class="new-news-title">Содержание</h1>
-                <div class="new-news-instuments">
-                    <img src="img/icons/admin/trash.png" alt="trash" class="instuments-icons">
-                    <img src="img/icons/admin/add-image.png" alt="add" class="instuments-icons">
-                    <input type="file" name="image_news" accept=".png, .jpg, .jpeg">
-                </div>
-
-                <textarea class="input-main-text" placeholder="Введите текст..." name="text_news" required></textarea>
-
-                <input type="submit">
-            </form>
-        </div>
-
-        <div class="right-container">
             <!-- Если будем делать cfg сайта, то делаем через форму -->
 
             <!-- <form action="" method="GET" class="change-color-theme"> -->
@@ -90,6 +77,29 @@
                 <button class="set-color-theme-btn">Применить</button>
             </div>
             <!-- </form> -->
+
+            <form action="./php/adding_news.php" method="POST" class="new-news-wrapper" enctype="multipart/form-data">
+                <h1>ДОБАВИТЬ НОВОСТЬ</h1>
+
+                <!-- <img src="img/icons/admin/close-news.png" alt="close-news" class="close-news"> -->
+
+                <h1 class="new-news-title">Заголовок</h1>
+                <input type="text" class="input-title" placeholder="Введите заголовок..." name="title_news" required>
+
+                <h1 class="new-news-title">Содержание</h1>
+                <div class="new-news-instuments">
+                    <img src="img/icons/admin/trash.png" alt="trash" class="instuments-icons">
+                    <img src="img/icons/admin/add-image.png" alt="add" class="instuments-icons">
+                    <input type="file" name="image_news" accept=".png, .jpg, .jpeg">
+                </div>
+
+                <textarea class="input-main-text" placeholder="Введите текст..." name="text_news" required></textarea>
+
+                <input type="submit">
+            </form>
+        </div>
+
+        <div class="right-container">
 
             <div class="news-archive">
                 <div class="arcive-header">

@@ -40,6 +40,7 @@
                 <a href="#news">Новости</a>
                 <a href="#our-team">О нас</a>
                 <a href="#map">Как добраться</a>
+                <a href="admin.php">Админ</a>
             </nav>
 
             <div class="navMobile">
