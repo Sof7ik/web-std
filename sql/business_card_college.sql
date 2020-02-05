@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 04 2020 г., 19:24
+-- Время создания: Фев 05 2020 г., 18:40
 -- Версия сервера: 8.0.15
 -- Версия PHP: 7.3.2
 
@@ -43,7 +43,7 @@ CREATE TABLE `feedback` (
   `id_feedback` int(11) NOT NULL,
   `date_feedback` datetime NOT NULL,
   `fio_feedback` varchar(50) NOT NULL,
-  `phone_feedback` varchar(20) NOT NULL,
+  `phone_feedback` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `email_feedback` varchar(64) NOT NULL,
   `description_feedback` text NOT NULL,
   `status_feedback` varchar(20) NOT NULL
