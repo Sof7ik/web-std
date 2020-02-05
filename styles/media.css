@@ -1,8 +1,8 @@
-@media screen and (max-width: 900px)
+@media screen and (max-width: 1300px)
 {
 	nav > a
 	{
-		font-size: 1.5vw;
+		font-size: 1vw;
 	}
 }
 
@@ -49,6 +49,15 @@
 	{
 		width: 70px;
 	}
+	#map-inner, #map-inner
+	{
+		width: 100%;
+		margin-right: 0;
+	}
+	#map
+	{
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 700px)
@@ -86,6 +95,10 @@
 	.swiper-button-prev
 	{
 		display: none;
+	}
+	.license
+	{
+		font-size: 4vw;
 	}
 }
 
