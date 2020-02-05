@@ -74,5 +74,14 @@
         die("При записи изображения на диск произошла ошибка");
     }
     
-    Database::queryExecute("INSERT INTO news VALUES ('$lastIdNews', '$titleNews', '$textNews', '$dateNews', 'active', '$imageNameFormat')");
+    $response = Database::queryExecute("INSERT INTO news VALUES ('$lastIdNews', '$titleNews', '$textNews', '$dateNews', 'active', '$imageNameFormat')");
+
+    if ($response)
+    {
+        echo '<p class="add_news_response">Новость успешно добавлена</p>';
+    }
+    else
+    {
+        echo '<p class="add_news_response">Во время добавления новости произошла ошибка, попробуйте снова</p>';
+    }
 ?>
