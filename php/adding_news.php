@@ -4,6 +4,7 @@
     $titleNews = $_REQUEST['title_news'];
     $textNews = $_REQUEST['text_news'];
 
+    // Берём последний ID новости, чтобы в дальнейшем создать папку с ID на единицу больше 
     $lastIdNews = (int)Database::query("SELECT id_news FROM news ORDER BY id_news DESC")['id_news'];
     $lastIdNews++;
 
@@ -68,7 +69,7 @@
 
     if (!move_uploaded_file($imagePath, $imageFullPath))
     {
-        die("при записи изображения на диск произошла ошибка");
+        die("При записи изображения на диск произошла ошибка");
     }
 
     Database::queryExecute("INSERT INTO news VALUES ('$lastIdNews', '$titleNews', '$textNews', '$dateNews', 'active', '$imageFullPath')");
