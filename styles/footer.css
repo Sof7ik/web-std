@@ -30,9 +30,11 @@ footer .section-title{
 }
 
 .form-submit {
+	flex-grow: 1;
     display: flex;
     flex-flow: column wrap;
     margin-right: 15px;
+
 }
 
 .fio {
@@ -43,6 +45,7 @@ footer .section-title{
     font-size: 1vw;
     padding: 15px;
     cursor: text;
+	height: 55px;
 }
 
 .form-submit :first-child{
@@ -50,6 +53,7 @@ footer .section-title{
 }
 
 .text-enter {
+	resize: vertical;
     border-radius: 10px;
     border: none;
     outline: none;
@@ -59,20 +63,22 @@ footer .section-title{
     cursor: text;
     font-family: "Comfortaa", regular;
     padding: 10px;
+	flex-grow: 2;
 }
 
 .submit {
     display: block;
     margin: 40px auto;
     padding: 8px;
-    margin-bottom: 20px;
-    border-radius: 20px;
+    margin-bottom: 90px;
+    border-radius: 35px;
     border:none;
     background-color: #B94643;
     color: white;
     font: 23px bold;
-    width: 250px;
+    width: 300px;
     outline: none;
+	height: 60px;
 
 }
 
@@ -121,5 +127,10 @@ footer .section-title{
 }
 
 .forma {
-    border-bottom: 3px solid #5C615C;
+	width: 100%;
+}
+
+.map
+{
+	padding-top: 90px;
 }
