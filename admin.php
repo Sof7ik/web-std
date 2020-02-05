@@ -11,17 +11,21 @@
 <body>
     <div class="wrapper">
         <div class="left-container">
-            <div class="edit-studio-title">
+            <form action="" method="POST" class="edit-studio-title">
+                <h1 class="edit-studio-title">ИЗМЕНИТЬ НАЗВАНИЕ СТУДИИ</h1>
 
-                <span>ВВЕДИТЕ НОВОЕ НАЗВАНИЕ</span>
+                <span class="new-studio-title">ВВЕДИТЕ НОВОЕ НАЗВАНИЕ</span>
                 <input type="text" class="edit-studio-title" name="edit-studio-title">
 
                 <span>Текущее название</span>
-                <input type="text" class="current-studio-title" value="">
+                <input type="text" class="current-studio-title" value="" readonly>
                 
-            </div>
+                <input type="submit" value="Поменять!">
+            </form>
 
             <form action="./php/adding_news.php" method="POST" class="new-news-wrapper" enctype="multipart/form-data">
+                <h1>ДОБАВИТЬ НОВОСТЬ</h1>
+
                 <img src="img/icons/admin/close-news.png" alt="close-news" class="close-news">
 
                 <h1 class="new-news-title">Заголовок</h1>
@@ -41,7 +45,27 @@
         </div>
 
         <div class="right-container">
+            <!-- Если будем делать cfg сайта, то делаем через форму -->
 
+            <!-- <form action="" method="GET" class="change-color-theme"> -->
+            <div class="change-color-theme">
+                <input type="radio" id="theme-1" name="color-theme">
+                <label for="theme-1">
+                    <img src="../img/styles/theme-1">
+                </label>
+
+                <input type="radio" id="theme-2" name="color-theme">
+                <label for="theme-2">
+                    <img src="../img/styles/theme-2">
+                </label>
+
+                <input type="radio" id="theme-3" name="color-theme">
+                <label for="theme-3">
+                    <img src="../img/styles/theme-3">
+                </label>
+
+            </div>
+            <!-- </form> -->
         </div>
     </div>
     
