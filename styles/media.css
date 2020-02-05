@@ -31,6 +31,22 @@
 	{
 		margin: 35px 0;
 	}
+	.box-form
+	{
+		flex-flow: column nowrap;
+	}
+	.text-enter
+	{
+		width: 100%;
+	}
+	.form-submit
+	{
+		margin-right: 0;
+	}
+	.text-enter
+	{
+		margin-top: 15px;
+	}
 }
 
 @media screen and (max-width: 875px)
