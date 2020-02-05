@@ -73,5 +73,15 @@ div.portfolio-item, div.hover-block, span.portfolio-item-description, div.member
 
 h1.section-title
 {
-	text-transform: uppercase;
+	text-transform: uppercase;	
+}
+
+.add_news_response
+{
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	padding: 15px;
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
 }
