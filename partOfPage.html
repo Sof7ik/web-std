@@ -141,13 +141,13 @@
     <section id="contact">
         <div class="container">
             <h1 class="section-title" style="padding-top: 90px">ФОРМА СВЯЗИ</h1>
-            <form action="#" class="forma">
+            <form action="php/adding_feedback.php" class="forma">
                 <div class="box-form">
                     <div class="form-submit">
-                        <input class="fio" type="text" placeholder="Введите ФИО..." required>
-                        <input class="fio" type="text" placeholder="Введите E-mail..." required>
+                        <input class="fio" type="text" placeholder="Введите ФИО..." required name="fio_feedback">
+                        <input class="fio" type="email" placeholder="Введите E-mail..." required name="email_feedback">
                     </div>
-                    <textarea placeholder="Введите текст..." class="text-enter"></textarea>
+                    <textarea placeholder="Введите текст..." class="text-enter" name="description_feedback"></textarea>
                 </div>
                     <input type="submit" value="ОТПРАВИТЬ" class="submit">
             </form>
