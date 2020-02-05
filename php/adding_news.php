@@ -12,7 +12,7 @@
 
     if ($_FILES['image_news']['error'] == UPLOAD_ERR_NO_FILE)
     {
-        die("Произошла ошибка при отправке изображения");
+        die("<p class='add_news_response'>Произошла ошибка при отправке изображения</p>");
     }
 
     $uploadedImage = $_FILES['image_news'];
@@ -22,7 +22,8 @@
 
     if ($errorCode != UPLOAD_ERR_OK)
     {
-        die("Произошла ошибка при отправке изображения");
+        
+        die("<p class='add_news_response'>Произошла ошибка при отправке изображения</p>");
     }
 
     $fi = finfo_open(FILEINFO_MIME_TYPE);
@@ -30,7 +31,8 @@
 
     if (strpos($mime, 'image') === false)
     {
-        die("Можно загружать только изображения");
+        
+        die("<p class='add_news_response'>Можно загружать только изображения</p>");
     }
     $image = getimagesize($imagePath);
 
@@ -45,15 +47,18 @@
 
     if (filesize($imagePath) > $limitBytes)
     {
-        die("Размер изображения не должен превышать 5 Мбайт");
+
+        die("<p class='add_news_response'>Размер изображения не должен превышать 5 Мбайт</p>");
     }
     if ($imageHeight > $limitHeight)
     {
-        die("Высота изображения не должна превышать 720 точек");
+        
+        die("<p class='add_news_response'>Высота изображения не должна превышать 720 точек</p>");
     }
     if ($imageWidth > $limitWidth)
     {
-        die("Ширина изображения не должна превышать 1280 точек");
+        
+        die("<p class='add_news_response'>Ширина изображения не должна превышать 1280 точек</p>");
     }
 
     $name = md5_file($imagePath);
