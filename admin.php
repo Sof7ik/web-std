@@ -73,7 +73,17 @@
             </div>
             <!-- </form> -->
 
-            <div class="news-archieve">
+            <div action="php/delete_news_from_archive" method="GET" class="news-archive">
+                <div class="arcive-header">
+                    <p class="news-title">Заголовок</p>
+                    <p class="pre-text">Пре-текст</pclass="news-title">
+                    <p class="publish-date">Дата публикации</p>
+                </div>
+                <div class="all-wrapper">
+                    <?php 
+                        require_once ('php/archive.php');
+                    ?>
+                </div> 
                 
             </div>
         </div>
