@@ -26,9 +26,6 @@
     }
 
     $fi = finfo_open(FILEINFO_MIME_TYPE);
-    echo '<pre>';
-        print_r($_FILES);
-    echo '</pre>';
     $mime = (string) finfo_file($fi, $imagePath);
 
     if (strpos($mime, 'image') === false)
