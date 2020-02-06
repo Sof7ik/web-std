@@ -76,7 +76,7 @@ h1.section-title
 	text-transform: uppercase;	
 }
 
-.add_news_response
+.add_news_response, .feedback_response
 {
 	position: fixed;
 	bottom: 25px;
