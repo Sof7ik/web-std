@@ -1,3 +1,5 @@
+<?php require_once './php/cfg.php'; ?>  
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Название студии</title>
-
+    <?php echo "<title>" . $config['title'] . " </title>"; ?>
     <!-- SWIPER LIBARY -->
     <link rel='stylesheet' href='./lib/swiper.min.css'>
     <script type="text/javascript" src="./lib/swiper.min.js" defer></script>
@@ -55,7 +56,7 @@
 
             <div class="navMobile">
                 <p class="hide-unhide">|||</p>
-                <p class="nav-title">Название студии</p>
+                <?php echo "<p class='nav-title'>" . $config['title'] . "</p>"; ?>
             </div>
 
             <!-- HEADER -->
@@ -63,7 +64,7 @@
                 <img src="./img/log_blog.png" alt="logo" class="studio-logo">
 
                 <span class='web-studio'>Веб студия</span>
-                <span class='studio-name'>«Название студии»</span>
+                <?php echo "<span class='studio-name'>«" . $config['title'] . "»‎</span>"; ?>
             </div>
 
             <a href="#uslugi"><img src="img/icons/arrow_down1.png" alt="you-down" class="next-page-arrow"></a>

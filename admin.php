@@ -1,8 +1,10 @@
 <?php
 session_start();
-if (!$_SESSION['is_admin']){
+if (!$_SESSION['is_admin'])
+{
     header('Location: ./authorization.html');
 }
+require_once './php/cfg.php';
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +22,7 @@ if (!$_SESSION['is_admin']){
 </head>
 <body>
 
-    <a href="partOfPage.php" style="color: #000000;">НА ГЛАВНУЮ</a>
+    <a href="./index.php" style="color: #000000;">НА ГЛАВНУЮ</a>
     <div class="wrapper">
         
             <div class="feedback">
@@ -41,14 +43,14 @@ if (!$_SESSION['is_admin']){
             </div>
 
         <div class="left-container">
-            <form action="" method="POST" class="edit-studio-title">
+            <form action="./php/update_cfg.php" method="POST" class="edit-studio-title">
                 <h1 class="edit-studio-title">ИЗМЕНИТЬ НАЗВАНИЕ СТУДИИ</h1>
 
                 <span class="new-studio-title">ВВЕДИТЕ НОВОЕ НАЗВАНИЕ</span>
                 <input type="text" class="edit-studio-title" name="edit-studio-title">
 
                 <span>Текущее название</span>
-                <input type="text" class="current-studio-title" value="" readonly>
+                <?php echo '<input type="text" class="current-studio-title" value="' .  $config['title'] . '" readonly>'; ?>
                 
                 <input type="submit" value="Поменять!">
             </form>
