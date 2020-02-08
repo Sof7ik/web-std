@@ -76,31 +76,37 @@
 	}
 	nav
 	{
-		display: none
+		display: none;
 	}
 	nav
 	{
+		position: fixed;
+
 		overflow: hidden;
 		overflow-y: scroll;
-		background-color: rgba(19, 29, 34, 0.9);
-		width: 100%;
+		align-items: center;
 		flex-flow: column nowrap;
 		justify-content: flex-start;
-		align-items: center;
-		position: fixed;
+
+		width: 100%;
 		height: 100%;
+
+		background-color: rgba(19, 29, 34, 0.9);
 	}
 	nav > a
 	{
-		opacity: 1;
-		width: 100%;
 		font-size: 5vw;
-		text-align: center;
+
+		width: 100%;
 		margin: 15px 0;
+
+		text-align: center;
+
+		opacity: 1;
 	}
 	.hide-unhide, .nav-title
 	{
-		display: block
+		display: block;
 	}
 	span.web-studio
 	{
@@ -141,8 +147,7 @@
 	{
 		margin: 25px;
 	}
-	.swiper-button-next,
-	.swiper-button-prev
+	.swiper-button-next, .swiper-button-prev
 	{
 		display: none;
 	}

@@ -39,9 +39,11 @@ form.auth
 span
 {
 	font-size: 14px;
+
 	margin-bottom: 5px;
-	text-transform: uppercase;
+
 	text-align: center;
+	text-transform: uppercase;
 }
 
 input.user-login
@@ -52,15 +54,17 @@ input.user-login
 input.user-login, input.user-password
 {
 	font-size: 19px;
-    padding-top: 10px;
+
 	width: 100%;
 	min-height: 40px;
 	margin-top: 8px;
 	padding: 7px 20px;
-	background-color: rgba(0,112,153, 0.1);
+	padding-top: 10px;
+
 	color: rgba(19,29,34, 0.6);
 	border: none;
 	border-radius: 15px;
+	background-color: rgba(0,112,153, 0.1);
 }
 
 input.user-login:hover, input.user-password:hover
@@ -83,30 +87,35 @@ div.login
 input.login-btn
 {
 	font-size: 14px;
-	text-transform: uppercase;
+
+	margin: 0 auto;
+	margin-top: 20px;
 	padding: 10px 25px;
 	padding-top: 13px;
+
+	text-transform: uppercase;
+
 	color: #FFFFFF;
 	border: 3px solid #007099;
 	border-radius: 5px;
 	background-color: #007099;
-	margin: 0 auto;
-	margin-top: 20px;
 }
 
 input.login-btn:hover
 {
 	color: #007099;
 	border: 3px solid #007099;
-	background-color: #ffffff;
+	background-color: #FFFFFF;
 }
 
 a.logout-btn
 {
-	opacity: 0.6;
-	text-transform: uppercase;
-	color: #FFFFFF;
 	margin-top: 50px;
+
+	text-transform: uppercase;
+
+	opacity: 0.6;
+	color: #FFFFFF;
 }
 
 a.logout-btn:hover
@@ -122,8 +131,8 @@ a.logout-btn:hover
 	}
 	form.auth
 	{
-		min-width: auto;
 		width: 100%;
+		min-width: auto;
 		padding: 50px 10%;
 	}
 }

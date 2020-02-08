@@ -21,7 +21,8 @@
 .usluga img
 {
 	width: 250px;
-	height: 210px;
+
+/* height: 210px; */
 	margin: 0 auto;
 	margin-bottom: 25px;
 }

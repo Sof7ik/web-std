@@ -12,8 +12,8 @@ foreach($allNews as $rowNews ){
     $titleNews = $rowNews['title_news'];
     echo '
     <a href="" style="background-image: url(./news_images/'.$idNews.'/'.$photoNews.')"> 
-        <p> '.$titleNews.' </p>
-        <p class=nososv_date">'.$dateNews.'</p>
+        <p class="novost_title"> '.$titleNews.' </p>
+        <p class="novost_date">'.$dateNews.'</p>
     </a>
     ';
 

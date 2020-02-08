@@ -1,87 +1,95 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,500,700|Yanone+Kaffeesatz:400,500,700&display=swap&subset=cyrillic");
+	@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,500,700|Yanone+Kaffeesatz:400,500,700&display=swap&subset=cyrillic");
 
-*
-{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	/* font-family: 'Yanone Kaffeesatz', sans-serif; */
-}
+	*
+	{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		/* font-family: 'Yanone Kaffeesatz', sans-serif; */
+	}
 
-html
-{
-	height: 100%;
-}
+	html
+	{	
+		height: 100%;
+	}
 
-img
-{
-	object-fit: contain;
-}
+	img
+	{
+		background: center / cover no-repeat;
+		-o-object-fit: contain;	
+		   object-fit: contain;
+	}
 
-body, input, a
-{
-	font-family: "Comfortaa", regular;
-}
+	body, input, a
+	{
+		font-family: "Comfortaa", regular;
+	}
 
-body
-{
-	width: 100%;
-	min-width: 320px;
-	min-height: 100%;
-}
+	body
+	{
+		width: 100%;
+		min-width: 320px;
+		min-height: 100%;
+	}
 
-a
-{
-	display: block;
+	a
+	{
+		display: block;
 
-	text-decoration: none;
+		text-decoration: none;
 
-	color: #FFFFFF;
-}
+		color: #FFFFFF;
+	}
 
-a, input
-{
-	/* cursor: pointer; */
-	transition: 0.3s all;
-}
+	a, input
+	{
+		/* cursor: pointer; */
+		-webkit-transition: 0.3s all;
+		transition: 0.3s all;
+	}
 
-h1
-{
-	text-align: center;
-}
+	h1
+	{
+		text-align: center;
+	}
 
-div.container
-{
-	display: flex;
-	align-items: center;
-	flex-flow: column nowrap;
+	div.container
+	{
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-align: center;
+		        align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-flow: column nowrap;
 
-	width: 100%;
-	min-width: 320px;
-	max-width: 1440px;
-	/* min-height: 70vh; */
-	margin: 0 auto;
-	padding: 0 50px;
-}
+		width: 100%;
+		min-width: 320px;
+		max-width: 1440px;
+		/* min-height: 70vh; */
+		margin: 0 auto;
+		padding: 0 50px;
+	}
 
-div.portfolio-item, div.hover-block, span.portfolio-item-description, div.member, div.portfolio-item:hover, div.portfolio-item:hover div.hover-block, div.portfolio-item:hover span.portfolio-item-description, div.member:hover div.hover-block, div.member:hover
-{
-	/* cursor: pointer; */
-	cursor: default;
-	transition: all 0.2s;
-}
+	div.portfolio-item, div.hover-block, span.portfolio-item-description, div.member, div.portfolio-item:hover, div.portfolio-item:hover div.hover-block, div.portfolio-item:hover span.portfolio-item-description, div.member:hover div.hover-block, div.member:hover
+	{
+		/* cursor: pointer; */
+		cursor: default;
+		-webkit-transition: all 0.2s;
+		transition: all 0.2s;
+	}
 
-h1.section-title
-{
-	text-transform: uppercase;	
-}
+	h1.section-title
+	{
+		text-transform: uppercase;	
+	}
 
-.add_news_response, .feedback_response
-{
-	position: fixed;
-	bottom: 25px;
-	right: 25px;
-	padding: 15px;
-	background-color: #FFFFFF;
-	border: 1px solid #000000;
-}
+	.add_news_response, .feedback_response
+	{
+		position: fixed;
+		bottom: 25px;
+		right: 25px;
+		padding: 15px;
+		background-color: #FFFFFF;
+		border: 1px solid #000000;
+	}

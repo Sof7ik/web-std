@@ -98,20 +98,21 @@ section#contact .section-title
 	padding: 8px;
 
 	cursor: pointer;
+	transform: scale(1);
 
 	color: white;
 	border: none;
 	border-radius: 35px;
 	outline: none;
 	background-color: #B94643;
-	transform: scale(1);
 }
 
 .submit:hover
 {
+	transform: scale(1.05);
+
 	color: #B94643;
 	background-color: white;
-	transform: scale(1.05);
 }
 
 .left-box
@@ -139,10 +140,11 @@ section#contact .section-title
 
 .arrow-up
 {
-	visibility: hidden;
 	position: fixed;
 	right: 40px;
 	bottom: 40px;
+
+	visibility: hidden;
 
 	width: 30px;
 	height: 30px;

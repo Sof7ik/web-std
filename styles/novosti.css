@@ -34,12 +34,15 @@
 
 .picture > a
 {
+	position: relative;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 
 	width: 655px;
 	min-height: 400px;
+	margin-bottom: 10px;
 
 	background-size: cover;
 }
@@ -49,7 +52,7 @@
 	font-size: 32px;
 	font-weight: bolder;
 
-	z-index: 10;
+	z-index: 10123123;
 
 	word-break: break-word;
 
@@ -57,19 +60,48 @@
 	text-shadow: 2px 2px 0px #1B315D;
 }
 
+/* FOR IE11 ONLY, POSITION TEXT IN NEWS */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+{
+	.picture > a
+	{	
+		position: relative;
+	}
+	.picture p
+	{	
+		position: absolute;
+	}
+	.picture p.novost_title
+	{
+		bottom: 40px;
+	}
+	.picture p.novost_date
+	{
+		bottom: 15px;
+	}
+}
+
 .picture a
 {
 	font-size: 12vw;
 
-	position: relative;
-
 	width: 100%;
 	min-height: 400px;
-	padding: 15px;
+	padding: 20px;
+	padding-top: 50px;
 
 	background-position: top center;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
+
+.picture p.novost_date
+{
+	/* margin-left: 5px; */
+	font-size: 18px;
+
+	margin-top: 15px;
+}
+
 
 .picture a::before
 {
@@ -89,6 +121,7 @@
 .picture a:hover
 {
 	z-index: 3;
+
 	transform: scale(1.1);
 
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -101,10 +134,4 @@
 .picture_2
 {
 	background-image: url(https://mir-s3-cdn-cf.behance.net/projects/max_808/3afd7c78214451.Y3JvcCw4NjIsNjc1LDE5LDA.jpg);
-}
-
-.picture p.nososv_date
-{
-	/* margin-left: 5px; */
-	font-size: 18px;
 }
