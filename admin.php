@@ -98,11 +98,6 @@ require_once './php/cfg.php';
         <div class="right-container">
 
             <div class="news-archive">
-                <div class="arcive-header">
-                    <p class="news-title">Заголовок</p>
-                    <p class="pre-text">Пре-текст</p>
-                    <p class="publish-date">Дата публикации</p>
-                </div>
                 <div class="all-wrapper">
                     <?php require_once ('php/archive.php'); ?>
                 </div> 

@@ -1,12 +1,12 @@
 <?php
 
 echo"
-	<p class='name-request' style='font-weight: bold'> ФИО </p>
-	<p class='pre-request' style='font-weight: bold'> Описание запроса </p>
-	<p class='date-request' style='font-weight: bold'> Дата запроса </p>
-	<p class='phone-number-request' style='font-weight: bold'> Номер телефона </p>
-	<p class='email-request' style='font-weight: bold'>  Эл. почта </p>
-	<p class='status-request' style='font-weight: bold'> Статус запроса </p>	
+	<p class='name-request' style='font-weight: bold; text-transform: uppercase'> ФИО </p>
+	<p class='pre-request' style='font-weight: bold; text-transform: uppercase'> Описание запроса </p>
+	<p class='date-request' style='font-weight: bold; text-transform: uppercase'> Дата запроса </p>
+	<p class='phone-number-request' style='font-weight: bold; text-transform: uppercase'> Номер телефона </p>
+	<p class='email-request' style='font-weight: bold; text-transform: uppercase'>  Эл. почта </p>
+	<p class='status-request' style='font-weight: bold; text-transform: uppercase'> Статус запроса </p>	
 	<p class='delete-news' class='delete-news'></p>";
 
 	require_once __DIR__ . './connection.php';
