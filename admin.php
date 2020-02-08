@@ -22,25 +22,16 @@ require_once './php/cfg.php';
 </head>
 <body>
 
-    <a href="./index.php" style="color: #000000;">НА ГЛАВНУЮ</a>
+    
     <div class="wrapper">
-        
-            <div class="feedback">
-                <div class="feedback-header">
-                    <p class="name-request">ФИО</p>
-                    <p class="pre-request">Описание запроса</p>
-                    <p class="date-request">Дата запроса</p>
-                    <p class="phone-number-request">Номер телефона</p>
-                    <p class="email-request">Эл. почта</p>
-                    <p class="status-request">Статус запроса</p>
-                    <p class="empty-request"></p>
-                </div>
-                <div class="all-requests">
-                    <?php 
-                        require_once ('php/feedback.php');
-                    ?>
-                </div>
+    
+        <a href="./index.php" class="homepage">НА ГЛАВНУЮ</a>
+            
+        <div class="feedback">
+            <div class="all-requests">
+                <?php require_once ('php/feedback.php'); ?>
             </div>
+        </div>
 
         <div class="left-container">
             <form action="./php/update_cfg.php" method="POST" class="edit-studio-title">
@@ -100,7 +91,7 @@ require_once './php/cfg.php';
 
                 <textarea class="input-main-text" placeholder="Введите текст..." name="text_news" required></textarea>
 
-                <input type="submit">
+                <input type="submit" value="Добавить новость">
             </form>
         </div>
 
@@ -113,9 +104,7 @@ require_once './php/cfg.php';
                     <p class="publish-date">Дата публикации</p>
                 </div>
                 <div class="all-wrapper">
-                    <?php 
-                        require_once ('php/archive.php');
-                    ?>
+                    <?php require_once ('php/archive.php'); ?>
                 </div> 
                 
             </div>

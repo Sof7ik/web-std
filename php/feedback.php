@@ -1,12 +1,21 @@
 <?php
 
+echo"
+	<p class='name-request' style='font-weight: bold'> ФИО </p>
+	<p class='pre-request' style='font-weight: bold'> Описание запроса </p>
+	<p class='date-request' style='font-weight: bold'> Дата запроса </p>
+	<p class='phone-number-request' style='font-weight: bold'> Номер телефона </p>
+	<p class='email-request' style='font-weight: bold'>  Эл. почта </p>
+	<p class='status-request' style='font-weight: bold'> Статус запроса </p>	
+	<p class='delete-news' class='delete-news'></p>";
+
 	require_once __DIR__ . './connection.php';
 
 	$query = Database::queryAll("SELECT * FROM `feedback`");
 
 	foreach ($query as $row){
 		echo"
-			<div class='inner-news-archive'>
+			
 				<p class='name-request'>" . $row['fio_feedback'] . "</p>
 				<p class='pre-request'>" . $row['description_feedback'] . "</p>
 				<p class='date-request'>" . $row['date_feedback'] . "</p>
@@ -16,7 +25,7 @@
 				<a href='delete_feedback.php?id_feedback=".$row['id_feedback']."'>
 					<img src='../img/icons/admin/trash.png' class='delete-news'>
 				</a>
-			</div>
+			
 		";
 		// echo "<p>" . $row['id_news'] . "</p>";
 		// echo "<p>" . $row['title_news'] . "</p>";
@@ -24,5 +33,4 @@
 		// echo "<p>" . $row['date_news'] . "</p>";
 		// echo "<a href='delete_news_from_archive.php?id=".$row['id_news']."'> удалить </a>";
 	}
-    
 ?>
