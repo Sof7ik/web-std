@@ -31,8 +31,8 @@
 
     <!-- INIT LIBARY JS CODE  -->
     <script type="text/javascript" src="./js/init.js" defer></script>
+    
     <script type="text/javascript" src="./js/navigation.js" defer></script>
-
     <script src="./js/send_feedback.js" defer></script>
 </head>
 
@@ -187,6 +187,7 @@
                     <div class="form-submit">
                         <input class="fio" id="fio_feedback" type="text" placeholder="Введите ФИО..." required>
                         <input class="fio" id="email_feedback" type="text" placeholder="Введите E-mail..." required>
+                        <input class="fio" id="phone_feedback" type="tel" placeholder="Введите телефон..." required>
                     </div>
                     <textarea id="text_feedback" placeholder="Введите текст..." class="text-enter"></textarea>
                 </div>

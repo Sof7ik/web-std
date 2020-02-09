@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . './connection.php';
+require_once __DIR__ . '/connection.php';
 $allNews = Database::queryAll("SELECT * FROM `news` WHERE `status_news` = 'active'");
 foreach($allNews as $rowNews ){
     /* <a href="" class="picture_1">

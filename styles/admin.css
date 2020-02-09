@@ -556,6 +556,10 @@ h1.new-news-title
 		width: 100%;
 		margin: 10px 0;
 	}
+	.homepage
+	{
+		margin: 10px 0;
+	}
 }
 
 @media screen and (max-width: 500px)
@@ -563,5 +567,10 @@ h1.new-news-title
 	.wrapper
 	{
 		padding: 5px;
+	}
+	.homepage
+	{
+		text-align: center;
+		width: 100%;
 	}
 }

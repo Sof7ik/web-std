@@ -4,14 +4,16 @@ let sendFeedback = async (event) =>
 
     let fioValue = fioInput.value;
     let emailValue = emailInput.value;
+    let phoneValue = phoneInput.value;
     let textValue = textInput.value;
 
     let form = new FormData();
     form.append('fio_feedback', fioValue);
     form.append('email_feedback', emailValue);
+    form.append('phone_feedback', phoneValue);
     form.append('description_feedback', textValue);
 
-    let fetchResponse = await fetch('../php/adding_feedback.php', 
+    let fetchResponse = await fetch('./php/adding_feedback.php', 
     {
         method: 'POST',
         body: form
@@ -23,8 +25,10 @@ let sendFeedback = async (event) =>
 }
 
 let sendFeedbackButton = document.querySelector('#feedback_form input[type="submit"]');
+
 let fioInput = document.querySelector('#fio_feedback');
 let emailInput = document.querySelector('#email_feedback');
+let phoneInput = document.querySelector('#phone_feedback');
 let textInput = document.querySelector('#text_feedback');
 
 sendFeedbackButton.addEventListener('click', (event) =>

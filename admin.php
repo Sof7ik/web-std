@@ -29,7 +29,7 @@ require_once './php/cfg.php';
             
         <div class="feedback">
             <div class="all-requests">
-                <?php require_once ('php/feedback.php'); ?>
+                <?php require_once ('./php/feedback.php'); ?>
             </div>
         </div>
 
@@ -56,17 +56,17 @@ require_once './php/cfg.php';
 
                     <input type="radio" id="theme-1" name="color-theme" required>
                     <label for="theme-1" class="color-theme-image">
-                        <img src="../img/price/1.jpg" class="color-theme-image">
+                        <img src="./img/price/1.jpg" class="color-theme-image">
                     </label>
 
                     <input type="radio" id="theme-2" name="color-theme" required>
                     <label for="theme-2" class="color-theme-image">
-                        <img src="../img/price/1.jpg" class="color-theme-image">
+                        <img src="./img/price/1.jpg" class="color-theme-image">
                     </label>
 
                     <input type="radio" id="theme-3" name="color-theme" required>
                     <label for="theme-3" class="color-theme-image">
-                        <img src="../img/price/1.jpg" class="color-theme-image">
+                        <img src="./img/price/1.jpg" class="color-theme-image">
                     </label>
 
                 </div>
@@ -99,7 +99,7 @@ require_once './php/cfg.php';
 
             <div class="news-archive">
                 <div class="all-wrapper">
-                    <?php require_once ('php/archive.php'); ?>
+                    <?php require_once ('./php/archive.php'); ?>
                 </div> 
                 
             </div>

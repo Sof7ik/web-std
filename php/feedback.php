@@ -9,7 +9,7 @@ echo"
 	<p class='status-request' style='font-weight: bold; text-transform: uppercase'> Статус запроса </p>	
 	<p class='delete-news' class='delete-news'></p>";
 
-	require_once __DIR__ . './connection.php';
+	require_once __DIR__ . '/connection.php';
 
 	$query = Database::queryAll("SELECT * FROM `feedback`");
 
@@ -22,8 +22,8 @@ echo"
 				<p class='phone-number-request'>" . $row['phone_feedback'] . "</p>
 				<p class='email-request'>" . $row['email_feedback'] . "</p>
 				<p class='status-request'>" . $row['status_feedback'] . "</p>	
-				<a href='delete_feedback.php?id_feedback=".$row['id_feedback']."'>
-					<img src='../img/icons/admin/trash.png' class='delete-news'>
+				<a href='./php/delete_feedback.php?id_feedback=".$row['id_feedback']."'>
+					<img src='./img/icons/admin/trash.png' class='delete-news'>
 				</a>
 			
 		";

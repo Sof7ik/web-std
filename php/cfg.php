@@ -1,5 +1,5 @@
 <?php
 
-        $config["title"] = "название студии";
+        $config["title"] = "v";
     
     

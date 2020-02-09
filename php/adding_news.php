@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__ . './connection.php';
+    require_once __DIR__ . '/connection.php';
     
     $titleNews = $_REQUEST['title_news'];
     $textNews = $_REQUEST['text_news'];

@@ -4,4 +4,6 @@
 
     Database::queryExecute("DELETE FROM `feedback` WHERE `id_feedback` = '$idFeedback'");
 
+    header("Location: ../admin.php");
+
 ?>

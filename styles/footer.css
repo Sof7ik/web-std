@@ -58,7 +58,7 @@ section#contact .section-title
 	outline: none;
 }
 
-.form-submit :first-child
+.form-submit :first-child, .form-submit :nth-child(2)
 {
 	margin-bottom: 10px;
 }

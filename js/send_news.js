@@ -11,7 +11,7 @@ let sendNews = async (event) =>
     form.append('text_news', textNewsValue);
     form.append('image_news', fileNewsValue);
 
-    let fetchResponse = await fetch('../php/adding_news.php', 
+    let fetchResponse = await fetch('./php/adding_news.php', 
     {
         method: 'POST',
         body: form
