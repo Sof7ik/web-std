@@ -16,6 +16,9 @@
     <!-- SMOOTH SCROLL LIBARY -->
     <script type="text/javascript" src="./lib/smooth-scroll.polyfills.min.js" defer></script>
 
+    <link rel="stylesheet" href="./lib/animate.css">
+    <script src="./lib/wow.min.js" defer></script>
+
     <link rel='stylesheet' href='./styles/general.css'>
     <link rel='stylesheet' href='./styles/header.css'>
     <link rel='stylesheet' href='./styles/portfolio.css'>
@@ -75,30 +78,30 @@
         <div class="container">
             <h1 class="section-title">НАШИ УСЛУГИ</h1>
             <div class="uslugi">
-                <div class="usluga">
+                <div class="usluga wow zoomIn">
                     <img src="./img/icons/site.png">
                     <p>СОЗДАНИЕ САЙТОВ</p>
                 </div>
-                <div class="usluga">
+                <div class="usluga wow zoomIn">
                     <img src="./img/icons/search.png">
                     <p>ПРОДВИЖЕНИЕ САЙТОВ</p>
                 </div>
-                <div class="usluga">
+                <div class="usluga wow zoomIn">
                     <img src="./img/icons/support.png">
                     <p>ПОДДЕРЖКА САЙТОВ</p>
                 </div>
             </div>
 
             <div class="uslugi" style="padding-top: 65px;">
-                <div class="usluga">
+                <div class="usluga wow zoomIn">
                     <img src="./img/icons/optimization.png">
                     <p>ОПТИМИЗАЦИЯ САЙТОВ</p>
                 </div>
-                <div class="usluga">
+                <div class="usluga wow zoomIn">
                     <img src="./img/icons/organization.png">
                     <p>ПРОЕКТИРОВАНИЕ СТРУКТУРЫ</p>
                 </div>
-                <div class="usluga">
+                <div class="usluga wow zoomIn">
                     <img src="./img/icons/content.png">
                     <p>АНАЛИЗ ИНФОРМАЦИИ</p>
                 </div>
@@ -111,19 +114,19 @@
         <div class="container">
             <h1 class="section-title">ЦЕНЫ</h1>
             <div class="prices">
-                <div class="price one">
+                <div class="price one wow bounceInLeft">
                     <p class="name"> Лендинг страница</p>
                     <p class="pr"> 20 000 р </p>
                     <a href="#contact"> Заказать </a>
                 </div>
 
-                <div class="price price_center">
+                <div class="price price_center  wow bounceInDown">
                     <p class="name"> Сайт-магазин </p>
                     <p class="pr"> 80 000 р </p>
                     <a href="#contact"> Заказать </a>
                 </div>
 
-                <div class="price three">
+                <div class="price three wow bounceInRight">
                     <p class="name"> Корпоративный сайт </p>
                     <p class="pr"> 50 000 р </p>
                     <a href="#contact"> Заказать </a>
@@ -139,37 +142,37 @@
 
             <div class="portfolio-wrapper">
 
-                <div class="portfolio-item n1">
+                <div class="portfolio-item n1 wow flipInY">
                     <div class="hover-block">
                         <span class="portfolio-item-description">НАЗВАНИЕ САЙТА</span>
                     </div>
                 </div>
 
-                <div class="portfolio-item n2">
+                <div class="portfolio-item n2 wow flipInX">
                     <div class="hover-block">
                         <span class="portfolio-item-description">НАЗВАНИЕ САЙТА</span>
                     </div>
                 </div>
 
-                <div class="portfolio-item n3">
+                <div class="portfolio-item n3 wow flipInY">
                     <div class="hover-block">
                         <span class="portfolio-item-description">НАЗВАНИЕ САЙТА</span>
                     </div>
                 </div>
 
-                <div class="portfolio-item n4">
+                <div class="portfolio-item n4 wow flipInX">
                     <div class="hover-block">
                         <span class="portfolio-item-description">НАЗВАНИЕ САЙТА</span>
                     </div>
                 </div>
 
-                <div class="portfolio-item n5">
+                <div class="portfolio-item n5 wow flipInY">
                     <div class="hover-block">
                         <span class="portfolio-item-description">НАЗВАНИЕ САЙТА</span>
                     </div>
                 </div>
 
-                <div class="portfolio-item n6">
+                <div class="portfolio-item n6 wow flipInX">
                     <div class="hover-block">
                         <span class="portfolio-item-description">НАЗВАНИЕ САЙТА</span>
                     </div>
@@ -184,14 +187,14 @@
             <h1 class="section-title" style="padding-top: 90px">ФОРМА СВЯЗИ</h1>
             <form action="#" class="forma" id="feedback_form">
                 <div class="box-form">
-                    <div class="form-submit">
+                    <div class="form-submit wow rotateInDownLeft">
                         <input class="fio" id="fio_feedback" type="text" placeholder="Введите ФИО..." required>
                         <input class="fio" id="email_feedback" type="text" placeholder="Введите E-mail..." required>
                         <input class="fio" id="phone_feedback" type="tel" placeholder="Введите телефон..." required>
                     </div>
-                    <textarea id="text_feedback" placeholder="Введите текст..." class="text-enter"></textarea>
+                    <textarea id="text_feedback" placeholder="Введите текст..." class="text-enter wow rotateInDownRight"></textarea>
                 </div>
-                    <input type="submit" value="ОТПРАВИТЬ" class="submit">
+                    <input type="submit" value="ОТПРАВИТЬ" class="submit wow zoomInUp">
             </form>
         </div>
         
@@ -203,7 +206,7 @@
     <section class="comments" id="comments">
             <h1 class="section-title"> Комментарии</h1>
         
-            <div class="swiper-container">
+            <div class="swiper-container wow lightSpeedIn">
                 <div class="swiper-wrapper">
 
                   <div class="swiper-slide">
@@ -248,7 +251,7 @@
     <section class="blok_novosti" id="news">
         <div class="container">
             <h1 class="section-title">НОВОСТИ</h1>
-            <div class="picture">
+            <div class="picture wow fadeIns">
                 <?php require_once './php/all_news.php' ?>  
                 <!-- <a href="" class="picture_1">
                     <p>НОВОСТЬ</p>
@@ -277,7 +280,7 @@
         <div class="container">
             <h1 class="section-title">НАША КОМАНДА</h1>
 
-            <div class="members">
+            <div class="members wow fadeIn">
 
                 <div class="swiper-container-our">
                     <div class="swiper-wrapper members">
@@ -327,12 +330,12 @@
     <footer>
         <div class="container" id="map">
             <h1 class="section-title map">МЫ НА КАРТЕ</h1>
-            <div class="box-maps">
+            <div class="box-maps wow bounceInLeft">
                 <div id="map-inner">
                     <iframe src="https://yandex.ru/map-widget/v1/-/CKQVzINP" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
                 </div>
 
-                <div class="lef-bar">
+            <div class="lef-bar">
                 <h2 class="left-box"> Открыто до 17:00 </h2>
                 <h2 class="left-box"> +7 (496) 556-96-83  </h2>
                 <h2 class="left-box"> Россия, Щёлково<br> Малопролетарская ул.28</h2>
